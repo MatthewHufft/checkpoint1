@@ -8,58 +8,59 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-  <header class="container-fluid sticky-top bg-primary">
-    <div class="row">
-      <div class="col-3">
-        <nav class="navbar navbar-light bg-primary">
-          <a class="navbar-brand" href="#">
-            <img src=".//husky.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-              Good Boi
-          </a>
+  <header class="container-fluid sticky-top bg-dark">
+      
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul class="nav  py-1">
+              <li class="nav-item col-12 col-md-2">
+                <a class="nav-link active text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item col-12 col-md-2">
+                <a class="nav-link text-white" href="#">Shop</a>
+              </li>
+              <li class="nav-item col-12 col-md-2">
+                <a class="nav-link text-white" href="#">Gallery</a>
+              </li>
+              <li class="nav-item col-12 col-md-2">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark text-light justify-content-start">
+          <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h2>GOOD BOI</h2>
         </nav>
-      </div>
-      <div class="col-9">
-        <ul class="nav justify-content-end py-1">
-          <li class="nav-item">
-            <a class="nav-link active text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+      
+
   </header>
   <main class="container-fluid">
     <div class="row bg-img-1">
-      <div class="col-3 offset-1">
-        <div id="form" class="bg-light my-4 p-2">
+      <div class="col-12 col-md-3 offset-md-1">
+        <div class="bg-light my-4 p-2 rounded">
           <form>
             <h3>Get our Newsletter</h3>
             <div class="form-row">
-              <div class="form-group col-md-12">
+              <div class="form-group col-12">
                 <input type="name" class="form-control" id="inputEmail4" placeholder="Name">
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-12">
+              <div class="form-group col-12">
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-12">
+              <div class="form-group col-12">
                 <input type="number" class="form-control" id="inputCity" placeholder="Phone">
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-12">
-                <textarea name="message" id="textArea" cols="39" rows="3" maxlength="50" placeholder="Your message"></textarea>
+              <div class="form-group col-12 ">
+                <textarea style="resize:none; width:100%" name="message" id="textArea" cols="30" rows="3" maxlength="50" placeholder="Your message"></textarea>
               </div>
             </div>
             <div class="form-group">
@@ -74,7 +75,7 @@
           </form>
         </div>
       </div>
-      <div class="col-4 offset-2 mt-4 text-light d-flex flex-column justify-content-center text-shadow ">
+      <div class="d-none d-md-block col-md-4 offset-md-2 mt-4 text-light flex-column justify-content-center text-shadow ">
         
           
             <h2>Who is the good boi?</h2>
@@ -84,12 +85,12 @@
       </div>
     </div>
     <div class="row py-2 bg-primary">
-      <div class="col-5 p-3 text-white">
+      <div class="order-2 order-md-1 col-12 col-md-5 p-3 text-white">
         <h2>Here is some text explaining the bars next to it</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laudantium. Incidunt, quibusdam! Delectus, repellendus odit saepe unde molestiae asperiores dolores officia dolore veritatis. Tenetur ipsa deserunt, nam architecto exercitationem quibusdam.</p>
       </div>
-      <div class="col-5 offset-1 d-flex">
-        <div class="card justify-content-around p-2 shadow" style="bottom:-30%">
+      <div class="order-1 order-md-2 mb-5 mb-md-1.5 col-12 col-md-5 offset-md-1 ">
+        <div class="card justify-content-around p-2 shadow move-bottom">
           <div class="row px-3">
             <i class="fa fa-wrench fa-lg pr-1"  aria-hidden="true"></i> <p> Puppy kitty ipsum dolor sit good dog foot stick canary. </p>
           </div>
@@ -111,39 +112,39 @@
     </div>
     
     <div class="row">
-      <div class="col-4">
+      <div class="col-12  col-md-4 pl-0">
         <img src="./husky2.jpg" width="100%" height="auto" alt="husky with snow on face">
       </div>
-      <div class="col-4 offset-2 d-flex flex-column justify-content-center">
+      <div class="col-12 col-md-4 offset-md-2 d-flex flex-column justify-content-center">
         <h1>"I like snow because it's like fluffy water..."</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi magnam culpa deleniti inventore minus ut quae, reiciendis, est nihil rerum dolor. Reprehenderit impedit facere, quisquam fuga laboriosam ex dolorum qui!</p>
       </div>
     </div>
-    <div class="row my-5 text-center justify-content-around align-items-center">
-      <div class="col-3">
+    <div class="row py-5 text-center justify-content-around align-items-center">
+      <div class="col-12 order-2 order-md-1 col-md-3 mb-2 mb-md-0 p-3">
         <div class="card card-body shadow">
-            <h2>"Some people think their dog is a good boi, but they haven't met my dog yet."</h2>
-            <p><em>Angela Peabody, 32, Seattle, WA</em></p>
+            <h2>“I don't who care who dies in the movie, as long as the dog lives.”</h2>
+            <p><em>-Deborah White, 49, Omaha, NE</em></p>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-12 order-1 order-md-2 col-md-3 mb-2 mb-md-0 p-3">
         <div class="card card-body shadow">
           <div class="row d-flex justify-content-around m-2 text-warning">
             <i class="fa fa-star fa-3x " aria-hidden="true"></i><i class="fa fa-star fa-3x" aria-hidden="true"></i><i class="fa fa-star fa-3x" aria-hidden="true"></i>
           </div>
-          <h2>"Some people think their dog is a good boi, but they haven't met my dog yet."</h2>
-          <p><em>Angela Peabody, 32, Seattle, WA</em></p>
+          <h2>“The dog is a gentleman; I hope to go to his heaven, not man’s.”</h2>
+          <p><em>-Mark Twain</em></p>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-12 order-3 order-md-3 col-md-3 p-3">
         <div class="card card-body shadow">
 
           <h2>"Some people think their dog is a good boi, but they haven't met my dog yet."</h2>
-          <p><em>Angela Peabody, 32, Seattle, WA</em></p>
+          <p><em>-Angela Peabody, 32, Seattle, WA</em></p>
         </div>
       </div>
     </div>
-    <div class="row py-5 mb-1 bg-primary">
+    <div class="row py-5 mb-1 bg-info">
       <div class="col-9 offset-1 text-white">
         <h2>Ready to discover the answer to life's biggest question?</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim perspiciatis deleniti adipisci. Cum hic accusamus expedita odio deleniti, amet quasi ut facilis officiis modi soluta culpa, repudiandae non numquam fugit.</p>
@@ -151,8 +152,8 @@
     </div>
   </main>
   <footer class="container-fluid bg-primary">
-    <div class="row d-flex justify-content-around py-2 text-white">
-      <div class="col-md-3 offset-md-1">
+    <div class="row justify-content-around py-2 text-white">
+      <div class="col-3 offset-md-1">
         <h5>Features</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-white" href="#">Cool stuff</a></li>
@@ -161,7 +162,7 @@
           <li><a class="text-white" href="#">Stuff for developers</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-3">
         <h5>Resources</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-white" href="#">Cool stuff</a></li>
@@ -170,7 +171,7 @@
           <li><a class="text-white" href="#">Stuff for developers</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-3">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-white" href="#">Cool stuff</a></li>
